@@ -8,10 +8,10 @@
 <b><p>Today is <u><label id='today'></label></u></p></b>
 
 <py-script>
-import datetime,urllib
+from datetime import datetime
 print("hello world")
 print("this page is made of Py-Script!")
-pyscript.write('today', datetime.date.today().strftime('%A %B %d, %Y'))
+pyscript.write('today', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 #import turtle
 </py-script>
 </body>
